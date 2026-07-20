@@ -498,6 +498,34 @@ details.minitoggle.muted > summary .tg-ic{color:var(--ink-soft);}
 .site-footer p{margin:0;color:var(--ink-soft);font-size:.86rem;}
 .site-footer a{color:var(--accent-d);font-weight:700;display:inline-flex;align-items:center;gap:5px;}
 
+/* ===================== 후기(Reviews) ===================== */
+.reviews{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.review{
+  background:var(--surface);border:1px solid var(--line);border-radius:var(--r);
+  padding:18px 22px;box-shadow:var(--sh);
+}
+.rv-badge{
+  display:inline-block;margin:0 0 10px;
+  font-size:.72rem;font-weight:700;letter-spacing:.02em;
+  background:var(--accent-bg);color:var(--accent-d);
+  padding:2px 9px;border-radius:999px;
+}
+.rv-item{margin:0 0 16px;}
+.rv-item:last-child{margin-bottom:0;}
+.rv-text{margin:0;font-size:.94rem;line-height:1.68;color:var(--ink);}
+.rv-text b{color:var(--accent-d);}
+.rv-text::before{content:"“ ";font-family:Georgia,serif;color:var(--accent);font-weight:700;}
+.rv-who{margin-top:3px;font-size:.79rem;color:var(--ink-faint);}
+.rv-who .id{font-weight:700;color:var(--ink-soft);}
+.review-strip{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;}
+.rs-item{
+  background:var(--surface-2);border:1px solid var(--line);border-radius:999px;
+  padding:7px 15px;font-size:.85rem;color:var(--ink-soft);
+}
+.rs-item b{color:var(--accent-d);font-weight:600;}
+.rs-item .rs-id{color:var(--ink-faint);font-size:.78rem;}
+.rv-note{margin:14px 2px 0;font-size:.76rem;color:var(--ink-faint);}
+
 /* 반응형 */
 @media (max-width:720px){
   .stats{grid-template-columns:repeat(2,1fr);}
@@ -510,6 +538,7 @@ details.minitoggle.muted > summary .tg-ic{color:var(--ink-soft);}
   .section{margin-top:48px;}
   .section.banner-rank{margin-top:16px;}
   .section.banner-rank + .section{margin-top:16px;}
+  .reviews{grid-template-columns:1fr;}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
