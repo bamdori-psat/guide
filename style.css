@@ -508,6 +508,8 @@ details.minitoggle.muted > summary .tg-ic{color:var(--ink-soft);}
   .chooser{padding:20px;}
   .wrap{padding:0 16px;}
   .section{margin-top:48px;}
+  .section.banner-rank{margin-top:16px;}
+  .section.banner-rank + .section{margin-top:16px;}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
