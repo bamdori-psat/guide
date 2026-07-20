@@ -107,9 +107,18 @@
     function pick(btn) {
       const target = btn.getAttribute("data-target");
       opts.forEach((o) => o.classList.toggle("active", o === btn));
+      let shown = null;
       document.querySelectorAll(".ch-result").forEach((r) => {
-        r.classList.toggle("show", r.id === target);
+        const on = r.id === target;
+        r.classList.toggle("show", on);
+        if (on) shown = r;
       });
+      if (shown) {
+        /* 열린 답변이 화면 밖에 있으면 보이는 위치까지 스크롤 (이미 다 보이면 이동 없음) */
+        requestAnimationFrame(() => {
+          shown.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        });
+      }
     }
     opts.forEach((o) => o.addEventListener("click", () => pick(o)));
   }
