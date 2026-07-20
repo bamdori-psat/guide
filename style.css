@@ -168,6 +168,8 @@ a{color:var(--teal-d);text-decoration:none;}
 /* ===================== 섹션 ===================== */
 main{padding:0 0 64px;}
 .section{margin-top:60px;scroll-margin-top:16px;}
+.section.banner-rank{margin-top:30px;}
+.section.banner-rank + .section{margin-top:30px;}
 .section-head{margin:0 0 22px;}
 .section-head h2{
   margin:8px 0 0;font-size:clamp(1.5rem,3.6vw,1.95rem);font-weight:800;
