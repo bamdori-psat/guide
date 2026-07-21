@@ -195,10 +195,10 @@
       R_BLOG: {
         theme: "blog",
         title: "블로그, 이렇게 활용하세요",
-        body: "티스토리 블로그 ‘PSAT 푸는 밤도리’에서는 2014년 이후 5급·7급·민경채 기출 해설을 광고 없이 무료로 볼 수 있습니다. 다만 사고 과정이 다수 생략된 러프한 해설이라, 제대로 쓰는 법을 먼저 익히는 것이 중요합니다. 해설의 특성과 두 가지 공부법을 활용법 페이지에 정리해 두었습니다.",
+        body: "티스토리 블로그 ‘PSAT 푸는 밤도리’에서는 2014년 이후 5급·7급·민경채 기출 해설을 광고 없이 무료로 볼 수 있습니다. 다만 사고 과정이 다수 생략된 러프한 해설이라, 제대로 쓰는 법을 먼저 익히는 것이 중요합니다. 원하는 해설은 블로그 안에서 찾기보다, 기출 정답·해설 모음 페이지에서 문항별 링크로 찾는 것이 편합니다.",
         actions: [
           { label: "블로그 활용법", href: "blog.html", cls: "btn bdblue" },
-          { label: "블로그 바로가기", href: "https://psat-bamdori.tistory.com/", cls: "btn ghost o-blog", ext: true }
+          { label: "기출 정답·해설 모음", href: "https://bamdori-psat.github.io/psat-answer/", cls: "btn ghost", ext: true }
         ]
       },
       low_lang: {
