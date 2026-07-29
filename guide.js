@@ -297,15 +297,13 @@
                 (/Android/i.test(ua) && /Mobile/i.test(ua));
   if (!isPhone) return;
   var MAP = {
-    /* 강사홈 */
-    "https://www.pmg.co.kr/user/pno/prof16/prof_detail_v2.asp?pf=psatbamdori&ctn=37":
-      "http://www.pmg.co.kr/user/m/prof/prof_pr.asp?Pf=psatbamdori&subname=%EC%83%81%ED%99%A9%ED%8C%90%EB%8B%A8",
+    /* 강사홈은 기기 구분 없이 PC 링크 유지 (2026-07-29 확정) — MAP에 넣지 말 것 */
     /* PSAT패스 */
     "https://www.pmg.co.kr/user/pno/event/event_pmg_psat.asp":
       "https://m.pmg.co.kr/user/m/pno/event/event_pmg_psat.asp?SiteID=gosispa",
     /* 미리피셋 강의 */
     "https://www.pmg.co.kr/user/pno/lecture/lecture_detail.asp?OpenCrsCode=020220260726O&CrsCode=020220260631M":
-      "https://m.pmg.co.kr/user/pno/lecture/lecture_detail.asp?OpenCrsCode=020220260726O&CrsCode=020220260631M"
+      "https://m.pmg.co.kr/user/m/lecture/lecture_view.asp?OpenCrsCode=020220260726O&CrsCode=020220260631M&SiteID=gosispa"
   };
   document.addEventListener("click", function (e) {
     var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
