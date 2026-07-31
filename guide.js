@@ -106,7 +106,7 @@
   if (opts.length) {
     function pick(btn) {
       const target = btn.getAttribute("data-target");
-      opts.forEach((o) => o.classList.toggle("active", o === btn));
+      opts.forEach((o) => o.classList.toggle("active", o.getAttribute("data-target") === target));
       let shown = null;
       document.querySelectorAll(".ch-result").forEach((r) => {
         const on = r.id === target;
