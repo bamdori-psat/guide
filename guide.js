@@ -172,7 +172,7 @@
         title: "먼저 기출문제로 내 위치를 파악하세요",
         body: "무작정 강의·책을 구매하거나 구독부터 하기 전에, 기출문제를 풀어 자신의 위치를 파악해야 합니다. 아래 글을 참조해 진입점수를 측정해 보세요.",
         actions: [
-          { label: "진입점수 측정 가이드", href: "https://naver.me/F5CWIfhs", cls: "btn", ext: true }
+          { label: "진입점수 측정 가이드", href: "https://contents.premium.naver.com/psatbamdori/psat/contents/240527210720767nt", cls: "btn", ext: true }
         ]
       },
       R_CLOSE: {
@@ -206,7 +206,7 @@
         body: "합격선과 차이가 큰 수준이라면 혼자 버티기보다 검증된 사고 과정을 배우는 쪽이 좋습니다. 언어논리의 논리·퀴즈, 논증·실험 유형은 밤프콘만으로 공부를 마칠 수 있습니다. 이론편, 유형별 모음집, 매일추론 순으로 이용하세요.",
         actions: [
           { label: "밤프콘 안내 및 활용법", href: "premium.html", cls: "btn naver" },
-          { label: "언어논리 공부법", href: "https://naver.me/xUwysOJh", cls: "btn ghost o-naver", ext: true }
+          { label: "언어논리 공부법", href: "https://contents.premium.naver.com/psatbamdori/psat/contents/241219004241675fq", cls: "btn ghost o-naver", ext: true }
         ]
       },
       low_data: {
