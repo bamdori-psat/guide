@@ -67,6 +67,8 @@
  <symbol id="ic-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></symbol>
  <symbol id="ic-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9.2 9.2a3 3 0 0 1 5.6 1c0 2-3 2.5-3 4"/><path d="M12 17h.01"/></symbol>
  <symbol id="ic-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+ <symbol id="ic-kakao" viewBox="0 0 24 24"><path d="M12 4.5c-4.7 0-8.5 3-8.5 6.7 0 2.4 1.6 4.5 4 5.7l-.9 3.6 4-2.6c.5.1.9.1 1.4.1 4.7 0 8.5-3 8.5-6.8S16.7 4.5 12 4.5Z"/></symbol>
+ <symbol id="ic-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></symbol>
  <symbol id="ic-check" viewBox="0 0 24 24"><path d="m20 6-11 11-5-5"/></symbol>
  <symbol id="ic-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
  <symbol id="ic-bookmark" viewBox="0 0 24 24"><path d="M19 21l-7-4.5L5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></symbol>
@@ -399,11 +401,21 @@
   <!-- ============ 연락처 ============ -->
   <section class="section" id="contact">
     <div class="contact">
-      <span class="c-ic"><svg class="ic"><use href="#ic-mail"/></svg></span>
-      <span class="c-body">
-        <span class="c-label">Contact</span>
-        이메일 zoloalfram@gmail.com · 카카오톡 ID psat.bamdori
-      </span>
+      <span class="c-label">Contact</span>
+      <div class="c-links">
+        <a class="c-link" href="mailto:zoloalfram@gmail.com">
+          <span class="c-ic"><svg class="ic"><use href="#ic-mail"/></svg></span>
+          <span class="c-body"><span class="c-name">이메일</span><span class="c-val">zoloalfram@gmail.com</span></span>
+        </a>
+        <a class="c-link c-kakao" href="https://open.kakao.com/me/psat_bamdori" target="_blank" rel="noopener">
+          <span class="c-ic"><svg class="ic"><use href="#ic-kakao"/></svg></span>
+          <span class="c-body"><span class="c-name">카카오톡</span><span class="c-val">psat.bamdori</span></span>
+        </a>
+        <a class="c-link c-insta" href="https://www.instagram.com/psat_bamdori/" target="_blank" rel="noopener">
+          <span class="c-ic"><svg class="ic"><use href="#ic-instagram"/></svg></span>
+          <span class="c-body"><span class="c-name">Instagram</span><span class="c-val">@psat_bamdori</span></span>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -418,7 +430,12 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p>밤도리 PSAT · 이메일 zoloalfram@gmail.com · 카카오톡 ID psat.bamdori</p>
+    <p>밤도리 PSAT</p>
+    <p class="foot-icons">
+      <a class="fi" href="mailto:zoloalfram@gmail.com" aria-label="이메일" title="이메일"><svg class="ic"><use href="#ic-mail"/></svg></a>
+      <a class="fi fi-kakao" href="https://open.kakao.com/me/psat_bamdori" target="_blank" rel="noopener" aria-label="카카오톡" title="카카오톡"><svg class="ic"><use href="#ic-kakao"/></svg></a>
+      <a class="fi fi-insta" href="https://www.instagram.com/psat_bamdori/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg class="ic"><use href="#ic-instagram"/></svg></a>
+    </p>
     <p><a href="https://bamdori-psat.github.io/psat-answer/" target="_blank" rel="noopener">PSAT 기출 정답·해설 모음 <svg class="ic"><use href="#ic-arrow-ur"/></svg></a></p>
   </div>
 </footer>
