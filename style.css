@@ -292,6 +292,12 @@ a.btile{color:inherit;}
 .btile.bdcoral .tile-ic{background:var(--bdcoral-bg);color:var(--bdcoral-d);}
 .btile.bdcoral .tile-go,.btile.bdcoral .tile-badge{color:var(--bdcoral-d);}
 .btile.bdcoral .tile-badge{background:var(--bdcoral-bg);}
+/* 인지훈련: 훈련 허브의 딥 그린·라임 테마 */
+.btile.training{--training-ink:#263c36;--training-lime:#d7f280;border-top-color:var(--training-ink);}
+.btile.training .tile-ic,.btile.training .tile-badge{background:var(--training-lime);color:var(--training-ink);}
+.btile.training .tile-link{color:var(--training-ink);}
+.btile.training .tile-link:hover{background:var(--training-lime);border-color:var(--training-lime);}
+
 .btile.pmg{border-top-color:var(--pmg);}
 .btile.pmg .tile-ic{background:var(--pmg-bg);color:var(--pmg-d);}
 .btile.pmg .tile-go,.btile.pmg .tile-badge{color:var(--pmg-d);}
