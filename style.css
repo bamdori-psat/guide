@@ -467,7 +467,7 @@ details.minitoggle.muted > summary .tg-ic{color:var(--ink-soft);}
 /* 연락처 */
 .contact{border:1px solid var(--line);border-radius:var(--r);padding:18px 22px;background:var(--surface);}
 .contact .c-label{font-weight:700;color:var(--accent-deep);display:block;margin-bottom:12px;}
-.c-links{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;}
+.c-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
 .c-link{display:flex;align-items:center;gap:12px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);color:var(--ink);text-decoration:none;transition:border-color .15s,background .15s,transform .15s;}
 .c-link:hover{border-color:var(--accent);background:#fff;transform:translateY(-1px);}
 .c-link .c-ic{width:42px;height:42px;border-radius:11px;background:var(--accent-bg);color:var(--accent-d);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex:none;}
@@ -709,3 +709,11 @@ a.ch-opt{display:inline-flex;align-items:center;text-decoration:none;}
   .ord-num{width:28px;height:28px;font-size:.82rem;}
   .ord-row{grid-template-columns:50px 1fr;gap:11px;}
 }
+
+/* 네이버 블로그 연락처 */
+.naver-blog-icon{display:block;width:20px;height:20px;object-fit:contain;}
+.fi.fi-naver{background:#e5f8ec;color:#03c75a;}
+.fi.fi-naver:hover{background:#fff;box-shadow:0 0 0 1px #03c75a;}
+
+.c-link.c-naver .c-ic{background:#e5f8ec;}
+.c-link.c-naver:hover{border-color:#03c75a;}
